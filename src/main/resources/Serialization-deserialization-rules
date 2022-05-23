@@ -1,0 +1,93 @@
+Scenario 1 :
+Key followed by value
+Eg. 1
+{
+ “name”:”Meenu”
+}
+Code –
+Class Json{
+Private String name;
+//Getters and setters
+}
+Eg. 2
+{
+ “age”:29
+}
+Code –
+Class Json{
+Private int age;
+//Getters and setters
+}
+
+
+Scenario 2:
+‘Key followed by {‘
+{
+“name”:”XUV 500”,
+“make”:”Mahindra”,
+“engine”:{
+“power”:”140 BHP”,
+“cc”:”2179”
+}
+}
+Code –
+Class Car{
+Private String name;
+Private String make;
+Private Engine engine;
+//getter and setters for all fields
+}
+Class Engine {
+Private String power;
+Private String cc;
+//getters and Setters
+}
+
+
+Scenario 3:
+‘Key followed by [‘
+[] means list (arrayList)
+{
+"courses": {
+ "webautomation": [
+ ],
+ "api": [
+ ]
+}
+Class Courses{
+Private list<WebAutomation> webautomation;
+Private list<Api> api;
+}
+Eg. -> 
+"courses": {
+ "webautomation": [
+ {
+ "coursename": "selenium",
+ "fee": "5000"
+ },
+ {
+ "coursename": "protractor",
+ "fee": "3000"
+ }
+ ],
+ "api": [
+ {
+ "coursename": "RestAPI",
+ "fee": "7000"
+ },
+ {
+ "coursename": "postman",
+ "fee": "2000"
+ }
+ ]
+ }
+Class Courses{
+Private list<CourseDetails> webautomation;
+Private list<CourseDetails> api;
+//setters and getters
+}
+Class CourseDetails{
+Private String courseName;
+Private String fee;
+//getters and setters
+}
