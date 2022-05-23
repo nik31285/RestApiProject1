@@ -1,45 +1,49 @@
 package serialization.dashboard;
 //"courses": {
-//    "webautomation":[
-//      {
-//        "title": "Selenium",
-//        "price": 4000
-//      },
-//      {
-//        "title": "Cypress",
-//        "price": 6000
-//      },
-//      {
-//        "title": "Protractor",
-//        "price": 7000
-//      }
-//    ],
-//    "api":[
-//      {
-//        "title": "Rest API",
-//        "price": 5000
-//      },
-//      {
-//        "title": "Soap UI",
-//        "price": 6000
-//      }
-//    ],
-
+//	 "webautomation": [
+//	 {
+//	 "coursename": "selenium",
+//	 "fee": "5000"
+//	 },
+//	 {
+//	 "coursename": "protractor",
+//	 "fee": "3000"
+//	 }
+//	 ],
+//	 "api": [
+//	 {
+//	 "coursename": "RestAPI",
+//	 "fee": "7000"
+//	 },
+//	 {
+//	 "coursename": "postman",
+//	 "fee": "2000"
+//	 }
+//	 ]
+//	 }
 import java.util.List;
 
 public class Courses {
-	List<WebAutomationCourses> webautomation;
-	List<ApiCourses> api;
-	public List<WebAutomationCourses> getWebautomation() {
+	List<CourseDetails> webautomation;
+	List<CourseDetails> api;
+//	Courses course;
+//	public Courses getCourse() {
+//		return course;
+//	}
+//	public void setCourse(Courses course) {
+//		this.course = course;
+//	}
+	public List<CourseDetails> getWebautomation() {
 		return webautomation;
 	}
-	public void setWebautomation(List<WebAutomationCourses> webautomation) {
+	public void setWebautomation(List<CourseDetails> webautomation) {
 		this.webautomation = webautomation;
 	}
-	public List<ApiCourses> getApi() {
+	public List<CourseDetails> getApi() {
 		return api;
 	}
-	public void setApi(List<ApiCourses> api) {
+	public void setApi(List<CourseDetails> api) {
 		this.api = api;
 	}
 }
+
